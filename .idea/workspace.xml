@@ -27,6 +27,10 @@
   <component name="ChangeListManager">
     <list default="true" id="092cdeb5-c237-49b7-9895-3431e8713f16" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/Jetstream/ApplicationLogo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Jetstream/ApplicationLogo.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/Jetstream/ApplicationMark.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Jetstream/ApplicationMark.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/Jetstream/Welcome.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Jetstream/Welcome.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,6 +181,8 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -209,7 +215,7 @@
       <option name="presentableId" value="Default" />
       <updated>1601675294170</updated>
       <workItem from="1601675295230" duration="3323000" />
-      <workItem from="1602016044156" duration="1035000" />
+      <workItem from="1602016044156" duration="5048000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <created>1602016468676</created>
@@ -218,7 +224,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602016468676</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="workspace.xml">
+      <created>1602017960977</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1602017960977</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,21 +262,22 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first" />
-    <option name="LAST_COMMIT_MESSAGE" value="first" />
+    <MESSAGE value="workspace.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="workspace.xml" />
   </component>
   <component name="WindowStateProjectService">
     <state x="18" y="-653" key="#Composer" timestamp="1601675377883">
       <screen x="-480" y="-1080" width="2560" height="1080" />
     </state>
     <state x="18" y="-653" key="#Composer/0.0.1440.900/-480.-1080.2560.1080@-480.-1080.2560.1080" timestamp="1601675377883" />
-    <state x="-43" y="-800" key="Vcs.Push.Dialog.v2" timestamp="1602016478539">
+    <state x="-43" y="-800" key="Vcs.Push.Dialog.v2" timestamp="1602017967151">
       <screen x="-480" y="-1080" width="2560" height="1080" />
     </state>
-    <state x="-43" y="-800" key="Vcs.Push.Dialog.v2/0.0.1440.900/-480.-1080.2560.1080@-480.-1080.2560.1080" timestamp="1602016478539" />
-    <state x="-136" y="-908" width="586" height="735" key="find.popup" timestamp="1602016011962">
+    <state x="-43" y="-800" key="Vcs.Push.Dialog.v2/0.0.1440.900/-480.-1080.2560.1080@-480.-1080.2560.1080" timestamp="1602017967151" />
+    <state x="-136" y="-908" width="586" height="735" key="find.popup" timestamp="1602021796410">
       <screen x="-480" y="-1080" width="2560" height="1080" />
     </state>
-    <state x="-136" y="-908" width="586" height="735" key="find.popup/0.0.1440.900/-480.-1080.2560.1080@-480.-1080.2560.1080" timestamp="1602016011962" />
+    <state x="-136" y="-908" width="586" height="735" key="find.popup/0.0.1440.900/-480.-1080.2560.1080@-480.-1080.2560.1080" timestamp="1602021796410" />
     <state x="-178" y="-839" width="670" height="676" key="search.everywhere.popup" timestamp="1602016025644">
       <screen x="-480" y="-1080" width="2560" height="1080" />
     </state>
