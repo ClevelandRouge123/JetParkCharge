@@ -20,3 +20,11 @@ Route::get('/', function () {
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return Inertia\Inertia::render('Dashboard');
 })->name('dashboard');
+
+Route::middleware(['auth:sanctum', 'verified'])->get('/charging', function () {
+    return Inertia\Inertia::render('Charging');
+})->name('charging');
+
+Route::middleware(['auth:sanctum', 'verified'])->get('/billing', function () {
+    return Inertia\Inertia::render('Billing');
+})->name('billing');
