@@ -4,10 +4,6 @@
     <expand>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
       <path>
@@ -20,18 +16,13 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:main" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="092cdeb5-c237-49b7-9895-3431e8713f16" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/js/Pages/Billing.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/Pages/Charging.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Layouts/AppLayout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Layouts/AppLayout.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -218,7 +209,9 @@
       <updated>1601675294170</updated>
       <workItem from="1601675295230" duration="3323000" />
       <workItem from="1602016044156" duration="5822000" />
-      <workItem from="1602094453377" duration="1523000" />
+      <workItem from="1602094453377" duration="3147000" />
+      <workItem from="1604960249362" duration="460000" />
+      <workItem from="1605272572057" duration="1885000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <created>1602016468676</created>
@@ -241,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602021943365</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added chargin and billing to nav">
+      <created>1602097145571</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1602097145571</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,19 +252,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="main" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -275,17 +263,18 @@
     <MESSAGE value="first" />
     <MESSAGE value="workspace.xml" />
     <MESSAGE value="Change logo colour and add jetstream provider ui" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change logo colour and add jetstream provider ui" />
+    <MESSAGE value="Added chargin and billing to nav" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added chargin and billing to nav" />
   </component>
   <component name="WindowStateProjectService">
     <state x="18" y="-653" key="#Composer" timestamp="1601675377883">
       <screen x="-480" y="-1080" width="2560" height="1080" />
     </state>
     <state x="18" y="-653" key="#Composer/0.0.1440.900/-480.-1080.2560.1080@-480.-1080.2560.1080" timestamp="1601675377883" />
-    <state x="-43" y="-800" key="Vcs.Push.Dialog.v2" timestamp="1602021949902">
+    <state x="-43" y="-800" key="Vcs.Push.Dialog.v2" timestamp="1602097150009">
       <screen x="-480" y="-1080" width="2560" height="1080" />
     </state>
-    <state x="-43" y="-800" key="Vcs.Push.Dialog.v2/0.0.1440.900/-480.-1080.2560.1080@-480.-1080.2560.1080" timestamp="1602021949902" />
+    <state x="-43" y="-800" key="Vcs.Push.Dialog.v2/0.0.1440.900/-480.-1080.2560.1080@-480.-1080.2560.1080" timestamp="1602097150009" />
     <state x="-136" y="-908" width="586" height="735" key="find.popup" timestamp="1602096064964">
       <screen x="-480" y="-1080" width="2560" height="1080" />
     </state>
