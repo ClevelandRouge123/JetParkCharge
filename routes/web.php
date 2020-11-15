@@ -28,3 +28,11 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/charging', function () {
 Route::middleware(['auth:sanctum', 'verified'])->get('/billing', function () {
     return Inertia\Inertia::render('Billing');
 })->name('billing');
+
+Route::middleware(['auth:sanctum', 'verified'])->get('/info', function () {
+    return Inertia\Inertia::render('Info');
+})->name('info');
+
+Route::middleware(['auth:sanctum', 'verified'])->get('/management', function () {
+    return Inertia\Inertia::render('Management');
+})->name('management');

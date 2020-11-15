@@ -20,8 +20,14 @@
                             <jet-nav-link href="/charging" :active="$page.currentRouteName == 'charging'">
                                 Charging
                             </jet-nav-link>
-                                <jet-nav-link href="/billing" :active="$page.currentRouteName == 'billing'">
+                            <jet-nav-link href="/billing" :active="$page.currentRouteName == 'billing'">
                                 Billing
+                            </jet-nav-link>
+                            <jet-nav-link href="/info" :active="$page.currentRouteName == 'info'">
+                                Info
+                            </jet-nav-link>
+                            <jet-nav-link href="/management" :active="$page.currentRouteName == 'management'">
+                                Management
                             </jet-nav-link>
                         </div>
                     </div>
@@ -127,6 +133,18 @@
                     <jet-responsive-nav-link href="/dashboard" :active="$page.currentRouteName == 'dashboard'">
                         Dashboard
                     </jet-responsive-nav-link>
+                    <jet-responsive-nav-link href="/charging" :active="$page.currentRouteName == 'charging'">
+                        Charging
+                    </jet-responsive-nav-link>
+                    <jet-responsive-nav-link href="/billing" :active="$page.currentRouteName == 'billing'">
+                        Billing
+                    </jet-responsive-nav-link>
+                    <jet-nav-link href="/info" :active="$page.currentRouteName == 'info'">
+                        Info
+                    </jet-nav-link>
+                    <jet-nav-link href="/management" :active="$page.currentRouteName == 'management'">
+                        Management
+                    </jet-nav-link>
                 </div>
 
                 <!-- Responsive Settings Options -->
