@@ -4,13 +4,38 @@
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
                 Live Charging
             </div>
+            <div class="activeCharging" v-for="charging in activeCharging" v-text="activeCharging.reg">
+
+            </div>
         </div>
     </div>
 </template>
 
 <script>
 export default {
-name: "LiveCharging"
+    name: "LiveCharging",
+    data() {
+        return {
+            activeCharging: ["car2"],
+            chargersToAdd: ''
+        }
+    },
+    mounted() {
+        Echo.channel('charging').listen('chargersToAdd', (e) => {
+            this.activeCharging = e.activeCharging;
+        });
+    },
+    methods: {
+        AddCharger() {
+            axios.post('/api/activeCharging/add', {
+                activeCharging: this.chargersToAdd
+            })
+                .then((response) => {
+                })
+                .catch((error) => {
+                });
+        }
+    }
 }
 </script>
 

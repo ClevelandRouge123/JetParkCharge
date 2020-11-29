@@ -29,20 +29,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="092cdeb5-c237-49b7-9895-3431e8713f16" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/js/Jetstream/Charging/LiveCharging.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/Jetstream/Dashboard/CarsDashboard.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/Jetstream/Dashboard/ChargingDashboard.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/Pages/Info.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/Pages/Management.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/parkcharge.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/parkcharge.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpdocker/php-fpm/php-ini-overrides.ini" beforeDir="false" afterPath="$PROJECT_DIR$/phpdocker/php-fpm/php-ini-overrides.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Jetstream/Welcome.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Jetstream/Welcome.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Layouts/AppLayout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Layouts/AppLayout.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Pages/Billing.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/Billing.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Pages/Charging.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/Charging.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Pages/Dashboard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/Dashboard.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/vendor/jetstream/components/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/jetstream/components/welcome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/Jetstream/Charging/LiveCharging.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Jetstream/Charging/LiveCharging.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +63,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
@@ -185,6 +185,23 @@
       <path value="$PROJECT_DIR$/vendor/facade/ignition" />
       <path value="$PROJECT_DIR$/vendor/facade/ignition-contracts" />
       <path value="$PROJECT_DIR$/vendor/facade/flare-client-php" />
+      <path value="$PROJECT_DIR$/vendor/cboden/ratchet" />
+      <path value="$PROJECT_DIR$/vendor/beyondcode/laravel-websockets" />
+      <path value="$PROJECT_DIR$/vendor/pusher/pusher-php-server" />
+      <path value="$PROJECT_DIR$/vendor/ratchet/rfc6455" />
+      <path value="$PROJECT_DIR$/vendor/symfony/psr-http-message-bridge" />
+      <path value="$PROJECT_DIR$/vendor/react/event-loop" />
+      <path value="$PROJECT_DIR$/vendor/react/cache" />
+      <path value="$PROJECT_DIR$/vendor/react/stream" />
+      <path value="$PROJECT_DIR$/vendor/react/http" />
+      <path value="$PROJECT_DIR$/vendor/react/promise-timer" />
+      <path value="$PROJECT_DIR$/vendor/react/promise" />
+      <path value="$PROJECT_DIR$/vendor/react/promise-stream" />
+      <path value="$PROJECT_DIR$/vendor/react/dns" />
+      <path value="$PROJECT_DIR$/vendor/react/socket" />
+      <path value="$PROJECT_DIR$/vendor/paragonie/sodium_compat" />
+      <path value="$PROJECT_DIR$/vendor/evenement/evenement" />
+      <path value="$PROJECT_DIR$/vendor/ringcentral/psr7" />
     </include_path>
   </component>
   <component name="ProjectId" id="1iL818KVjsdmGaOc4hQcDXd4paY" />
@@ -206,6 +223,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -232,7 +250,13 @@
       <workItem from="1602016044156" duration="5822000" />
       <workItem from="1602094453377" duration="3147000" />
       <workItem from="1604960249362" duration="460000" />
-      <workItem from="1605272572057" duration="9558000" />
+      <workItem from="1605272572057" duration="16204000" />
+      <workItem from="1606257569335" duration="3971000" />
+      <workItem from="1606413314884" duration="308000" />
+      <workItem from="1606413732514" duration="1126000" />
+      <workItem from="1606655819185" duration="208000" />
+      <workItem from="1606656068116" duration="188000" />
+      <workItem from="1606656675345" duration="815000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <created>1602016468676</created>
@@ -269,7 +293,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605473301195</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="additional pages added and basic functionality working. placeholders put on dashboard">
+      <created>1605482552381</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1605482552381</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -305,7 +336,9 @@
     <MESSAGE value="Change logo colour and add jetstream provider ui" />
     <MESSAGE value="Added chargin and billing to nav" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="additional pages added and basic functionality working. placeholders put on dashboard" />
+    <option name="LAST_COMMIT_MESSAGE" value="additional pages added and basic functionality working. placeholders put on dashboard" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="18" y="-653" key="#Composer" timestamp="1601675377883">
@@ -316,24 +349,45 @@
       <screen x="-1120" y="-1440" width="2560" height="1440" />
     </state>
     <state x="-779" y="-914" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1680.1050/-1120.-1440.2560.1440@-1120.-1440.2560.1440" timestamp="1605477960974" />
+    <state x="-58" y="-610" key="#com.jetbrains.php.lang.intentions.PhpImportClassDialog#" timestamp="1606255381366">
+      <screen x="-480" y="-1080" width="2560" height="1080" />
+    </state>
+    <state x="-58" y="-610" key="#com.jetbrains.php.lang.intentions.PhpImportClassDialog#/0.0.1440.900/-480.-1080.2560.1080@-480.-1080.2560.1080" timestamp="1606255381366" />
     <state x="-691" y="-1014" key="RollbackChangesDialog" timestamp="1605473058399">
       <screen x="-1120" y="-1440" width="2560" height="1440" />
     </state>
     <state x="-691" y="-1014" key="RollbackChangesDialog/0.0.1680.1050/-1120.-1440.2560.1440@-1120.-1440.2560.1440" timestamp="1605473058399" />
-    <state x="-683" y="-1067" key="Vcs.Push.Dialog.v2" timestamp="1605473315821">
-      <screen x="-1120" y="-1440" width="2560" height="1440" />
+    <state x="-73" y="-977" key="SettingsEditor" timestamp="1606254388776">
+      <screen x="-480" y="-1080" width="2560" height="1080" />
     </state>
-    <state x="-43" y="-800" key="Vcs.Push.Dialog.v2/0.0.1440.900/-480.-1080.2560.1080@-480.-1080.2560.1080" timestamp="1602097150009" />
-    <state x="-683" y="-1067" key="Vcs.Push.Dialog.v2/0.0.1680.1050/-1120.-1440.2560.1440@-1120.-1440.2560.1440" timestamp="1605473315821" />
+    <state x="-73" y="-977" key="SettingsEditor/0.0.1440.900/-480.-1080.2560.1080@-480.-1080.2560.1080" timestamp="1606254388776" />
+    <state x="229" y="86" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1605997042549" />
+    <state x="-43" y="-800" key="Vcs.Push.Dialog.v2" timestamp="1606254403646">
+      <screen x="-480" y="-1080" width="2560" height="1080" />
+    </state>
+    <state x="-43" y="-800" key="Vcs.Push.Dialog.v2/0.0.1440.900/-480.-1080.2560.1080@-480.-1080.2560.1080" timestamp="1606254403646" />
+    <state x="-683" y="-1067" key="Vcs.Push.Dialog.v2/0.0.1680.1050/-1120.-1440.2560.1440@-1120.-1440.2560.1440" timestamp="1605482558751" />
     <state x="-776" y="-1211" width="586" height="980" key="find.popup" timestamp="1605481820172">
       <screen x="-1120" y="-1440" width="2560" height="1440" />
     </state>
     <state x="-136" y="-908" width="586" height="735" key="find.popup/0.0.1440.900/-480.-1080.2560.1080@-480.-1080.2560.1080" timestamp="1602096064964" />
     <state x="-776" y="-1211" width="586" height="980" key="find.popup/0.0.1680.1050/-1120.-1440.2560.1440@-1120.-1440.2560.1440" timestamp="1605481820172" />
-    <state x="-818" y="-1119" width="670" height="902" key="search.everywhere.popup" timestamp="1605481576980">
-      <screen x="-1120" y="-1440" width="2560" height="1440" />
+    <state x="-178" y="-839" width="670" height="676" key="search.everywhere.popup" timestamp="1606255275864">
+      <screen x="-480" y="-1080" width="2560" height="1080" />
     </state>
-    <state x="-178" y="-839" width="670" height="676" key="search.everywhere.popup/0.0.1440.900/-480.-1080.2560.1080@-480.-1080.2560.1080" timestamp="1602016025644" />
+    <state x="-178" y="-839" width="670" height="676" key="search.everywhere.popup/0.0.1440.900/-480.-1080.2560.1080@-480.-1080.2560.1080" timestamp="1606255275864" />
+    <state x="170" y="201" width="670" height="564" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1605997022936" />
     <state x="-818" y="-1119" width="670" height="902" key="search.everywhere.popup/0.0.1680.1050/-1120.-1440.2560.1440@-1120.-1440.2560.1440" timestamp="1605481576980" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/resources/js/Jetstream/Charging/LiveCharging.vue</url>
+          <line>24</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
