@@ -26,8 +26,8 @@
                             <jet-nav-link href="/info" :active="$page.currentRouteName == 'info'">
                                 Info
                             </jet-nav-link>
-                            <jet-nav-link href="/management" :active="$page.currentRouteName == 'management'">
-                                Management
+                            <jet-nav-link href="/vehicles" :active="$page.currentRouteName == 'management'">
+                                Vehicles
                             </jet-nav-link>
                         </div>
                     </div>
@@ -142,8 +142,8 @@
                     <jet-nav-link href="/info" :active="$page.currentRouteName == 'info'">
                         Info
                     </jet-nav-link>
-                    <jet-nav-link href="/management" :active="$page.currentRouteName == 'management'">
-                        Management
+                    <jet-nav-link href="/vehicles" :active="$page.currentRouteName == 'management'">
+                        Vehicles
                     </jet-nav-link>
                 </div>
 

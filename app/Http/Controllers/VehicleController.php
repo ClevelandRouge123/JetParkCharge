@@ -20,7 +20,7 @@ class VehicleController extends Controller
     public function index()
     {
         $data = Vehicle::where('user_id', Auth::id())->get();
-        return \Inertia\Inertia::render('Management', ['vehicles' => $data]);
+        return \Inertia\Inertia::render('Vehicles', ['vehicles' => $data]);
     }
 
     /**

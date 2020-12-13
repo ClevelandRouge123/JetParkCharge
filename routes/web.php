@@ -34,8 +34,8 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/info', function () {
 })->name('info');
 
 Route::middleware(['auth:sanctum', 'verified'])->get(
-    '/management', [VehicleController::class, 'index'
-])->name('management');
+    '/vehicles', [VehicleController::class, 'index'
+])->name('vehicles');
 
 Route::middleware(['auth:sanctum', 'verified'])->get(
     '/vehicle_add', [VehicleController::class, 'create'
