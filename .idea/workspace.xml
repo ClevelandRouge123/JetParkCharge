@@ -29,20 +29,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="092cdeb5-c237-49b7-9895-3431e8713f16" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/js/Pages/Components/VehicleListOverview.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/resources/js/Pages/vehicle_add.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/parkcharge.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/parkcharge.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/VehicleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/VehicleController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Vehicle.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Vehicle.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_29_131427_create_vehicles_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_29_131427_create_vehicles_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Jetstream/Dashboard/ChargingDashboard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Jetstream/Dashboard/ChargingDashboard.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Pages/Management.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/Management.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -272,7 +261,7 @@
       <workItem from="1606656675345" duration="2235000" />
       <workItem from="1607708383797" duration="5394000" />
       <workItem from="1607724146757" duration="2889000" />
-      <workItem from="1607729289969" duration="10301000" />
+      <workItem from="1607729289969" duration="12234000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <created>1602016468676</created>
@@ -323,7 +312,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606670917683</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Add vehicles">
+      <created>1607897957812</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1607897957812</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -361,7 +357,8 @@
     <MESSAGE value="update" />
     <MESSAGE value="additional pages added and basic functionality working. placeholders put on dashboard" />
     <MESSAGE value="updated, added websockets and vehicle model" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated, added websockets and vehicle model" />
+    <MESSAGE value="Add vehicles" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add vehicles" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">

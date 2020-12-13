@@ -19,7 +19,7 @@ class VehicleController extends Controller
      */
     public function index()
     {
-        $data = User::all();
+        $data = Vehicle::where('user_id', Auth::id())->get();
         return \Inertia\Inertia::render('Management', ['vehicles' => $data]);
     }
 
@@ -41,7 +41,7 @@ class VehicleController extends Controller
      */
     public function store(Request $request)
     {
-        request()->validate([
+        $request->validate([
             'name' => ['required', 'string'],
             'registration_number' => ['required']
         ]);
@@ -51,20 +51,11 @@ class VehicleController extends Controller
         $vehicle->reg = $request->get('registration_number');
         $vehicle->user_id = Auth::id();
         if ($vehicle->save()) {
-            return 'Success';
+            return redirect('/management');
         } else {
-            return 'Fail';
+            return back()->withInput();
         }
-
-
-        $user = User::find(auth()->user('id'));
-//        dd($user);
-        $user->vehicle->create([
-            'name' => $request->name,
-            'reg' => $request->registration_number
-        ]);
-        return \Inertia\Inertia::render('Management');
-
+        return $result;
     }
 
     /**
