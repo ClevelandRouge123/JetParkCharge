@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\VehicleController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -33,6 +33,15 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/info', function () {
     return Inertia\Inertia::render('Info');
 })->name('info');
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/management', function () {
-    return Inertia\Inertia::render('Management');
-})->name('management');
+Route::middleware(['auth:sanctum', 'verified'])->get(
+    '/management', [VehicleController::class, 'index'
+])->name('management');
+
+Route::middleware(['auth:sanctum', 'verified'])->get(
+    '/vehicle_add', [VehicleController::class, 'create'
+])->name('vehicle_create');
+
+Route::middleware(['auth:sanctum', 'verified'])->post(
+    '/vehicle_add', [VehicleController::class, 'store'
+])->name('vehicle_store');
+
