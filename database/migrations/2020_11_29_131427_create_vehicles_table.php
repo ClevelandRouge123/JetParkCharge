@@ -18,6 +18,9 @@ class CreateVehiclesTable extends Migration
             $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users');
             $table->string('name');
+            $table->string('make');
+            $table->string('model');
+            $table->Integer('mileage');
             $table->string('reg');
             $table->timestamps();
         });

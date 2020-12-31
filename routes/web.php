@@ -14,8 +14,8 @@ use App\Http\Controllers\VehicleController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('auth.login');
+})->name('welcome');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return Inertia\Inertia::render('Dashboard');
@@ -45,3 +45,6 @@ Route::middleware(['auth:sanctum', 'verified'])->post(
     '/vehicle_add', [VehicleController::class, 'store'
 ])->name('vehicle_store');
 
+Route::middleware(['auth:sanctum', 'verified'])->get(
+    '/vehicle_delete/{vehicle}', [VehicleController::class, 'destroy'
+])->name('vehicle_delete');

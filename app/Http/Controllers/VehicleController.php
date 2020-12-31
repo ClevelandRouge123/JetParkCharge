@@ -7,8 +7,7 @@ use App\Models\Vehicle;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Auth;
-
-//use Inertia;
+use Inertia\Inertia;
 
 class VehicleController extends Controller
 {
@@ -20,7 +19,7 @@ class VehicleController extends Controller
     public function index()
     {
         $data = Vehicle::where('user_id', Auth::id())->get();
-        return \Inertia\Inertia::render('Vehicles', ['vehicles' => $data]);
+        return Inertia::render('Vehicles', ['vehicles' => $data]);
     }
 
     /**
@@ -43,15 +42,21 @@ class VehicleController extends Controller
     {
         $request->validate([
             'name' => ['required', 'string'],
-            'registration_number' => ['required']
+            'reg' => ['required'],
+            'make' => ['required'],
+            'model' => ['required'],
+            'mileage' => ['required']
         ]);
 
         $vehicle = new Vehicle();
         $vehicle->name = $request->get('name');
-        $vehicle->reg = $request->get('registration_number');
+        $vehicle->reg = $request->get('reg');
+        $vehicle->make = $request->get('make');
+        $vehicle->model = $request->get('model');
+        $vehicle->mileage = $request->get('mileage');
         $vehicle->user_id = Auth::id();
         if ($vehicle->save()) {
-            return redirect('/management');
+            return redirect('/vehicles');
         } else {
             return back()->withInput();
         }
@@ -100,6 +105,8 @@ class VehicleController extends Controller
      */
     public function destroy(Vehicle $vehicle)
     {
-        //
+        if ($vehicle->delete()) {
+            return redirect('/vehicles');
+        }
     }
 }

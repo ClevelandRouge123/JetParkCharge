@@ -28,12 +28,21 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="092cdeb5-c237-49b7-9895-3431e8713f16" name="Default Changelist" comment="">
+    <list default="true" id="092cdeb5-c237-49b7-9895-3431e8713f16" name="Default Changelist" comment="Update management to vehicles">
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/VehicleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/VehicleController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_29_131427_create_vehicles_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_29_131427_create_vehicles_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpdocker/php-fpm/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/phpdocker/php-fpm/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpdocker/php-fpm/php-ini-overrides.ini" beforeDir="false" afterPath="$PROJECT_DIR$/phpdocker/php-fpm/php-ini-overrides.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Layouts/AppLayout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Layouts/AppLayout.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Pages/Management.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/Vehicles.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/Jetstream/Charging/LiveCharging.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Jetstream/Charging/LiveCharging.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/Pages/Billing.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/Billing.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/Pages/Charging.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/Charging.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/Pages/Components/VehicleListOverview.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/Components/VehicleListOverview.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/Pages/Vehicles.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/Vehicles.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/Pages/vehicle_add.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/vehicle_add.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,8 +65,19 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="PhpDebugGeneral" listening_started="true" />
-  <component name="PhpWorkspaceProjectConfiguration">
+  <component name="PhpDebugGeneral" break_at_first_line="true" listening_started="true" />
+  <component name="PhpServers">
+    <servers>
+      <server host="localhost" id="4ddbfe0c-409a-4a98-9c60-254a93cdc62a" name="local" use_path_mappings="true">
+        <path_mappings>
+          <mapping local-root="$PROJECT_DIR$" remote-root="/application" />
+        </path_mappings>
+      </server>
+      <server id="e4a136fd-f321-4557-9398-13728eeeb65b" name="Unnamed" />
+    </servers>
+  </component>
+  <component name="PhpWebServerValidation" path_to_validation_script="$PROJECT_DIR$" selected_validation_type="LOCAL" web_path_to_validation_script="localhost" />
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="parkcharge_php-fpm:latest">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
       <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
@@ -217,6 +237,8 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="credentialsType com.jetbrains.php.remote.interpreter.ui.PhpCreateRemoteSdkForm" value="Docker" />
+    <property name="credentialsType com.jetbrains.php.remote.interpreter.ui.PhpInplaceEditRemoteSdkForm" value="Docker" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/js/Pages" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -225,7 +247,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="settings.php.debug.servers" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -237,11 +259,36 @@
       <recent name="$PROJECT_DIR$/resources/js/Pages/Management" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
-      <TestRunner scope="XML" />
+  <component name="RunManager" selected="PHP Remote Debug.Docker remote">
+    <configuration name="Info.vue" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/parkcharge/resources/js/Pages/Info.vue" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
+    <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method v="2" />
+    </configuration>
+    <configuration name="CarChargingActivated.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/app/Events/CarChargingActivated.php">
+      <method v="2" />
+    </configuration>
+    <configuration name="Docker remote" type="PhpRemoteDebugRunConfigurationType" factoryName="PHP Remote Debug" filter_connections="NOT_FILTER" server_name="local">
+      <method v="2" />
+    </configuration>
+    <configuration name="Docker" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="local" start_url="http://localhost:8000">
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.Info.vue" />
+      <item itemvalue="PHP Remote Debug.Docker remote" />
+      <item itemvalue="PHP Script.CarChargingActivated.php" />
+      <item itemvalue="PHP Web Page.Docker" />
+      <item itemvalue="PHPUnit.phpunit.xml" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHP Script.CarChargingActivated.php" />
+        <item itemvalue="JavaScript Debug.Info.vue" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -264,7 +311,10 @@
       <workItem from="1606656675345" duration="2235000" />
       <workItem from="1607708383797" duration="5394000" />
       <workItem from="1607724146757" duration="2889000" />
-      <workItem from="1607729289969" duration="12643000" />
+      <workItem from="1607729289969" duration="13288000" />
+      <workItem from="1608028699949" duration="8223000" />
+      <workItem from="1608754657043" duration="11885000" />
+      <workItem from="1609427370236" duration="850000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <created>1602016468676</created>
@@ -329,7 +379,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607900064819</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Update management to vehicles">
+      <created>1607900556082</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1607900556082</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -369,7 +426,8 @@
     <MESSAGE value="updated, added websockets and vehicle model" />
     <MESSAGE value="Add vehicles" />
     <MESSAGE value="Select Vehicles rather than user on management page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Select Vehicles rather than user on management page" />
+    <MESSAGE value="Update management to vehicles" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update management to vehicles" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -379,6 +437,26 @@
           <url>file://$PROJECT_DIR$/resources/js/Jetstream/Charging/LiveCharging.vue</url>
           <line>24</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/resources/js/Pages/vehicle_add.vue</url>
+          <line>8</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Http/Controllers/VehicleController.php</url>
+          <line>52</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Http/Controllers/VehicleController.php</url>
+          <line>42</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Http/Controllers/VehicleController.php</url>
+          <line>20</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

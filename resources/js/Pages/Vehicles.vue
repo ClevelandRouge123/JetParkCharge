@@ -8,10 +8,11 @@
             </h2>
         </template>
 
-        <div class="py-12">
-            <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-                <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
-                    <div class="flex space-x-4 mb-4" v-for="vehicle in vehicles" v-bind:key="vehicle.id">
+        <div class="py-6">
+            <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 ">
+                <div
+                    class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 bg-white overflow-hidden shadow-xl sm:rounded-lg">
+                    <div v-for="vehicle in vehicles" v-bind:key="vehicle.id">
                         <vehicle-list-overview :vehicle='vehicle'/>
                     </div>
                 </div>

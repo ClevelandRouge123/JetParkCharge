@@ -2,10 +2,10 @@
     <x-jet-authentication-card>
         <x-slot name="logo">
             <x-jet-authentication-card-logo />
+
         </x-slot>
 
         <x-jet-validation-errors class="mb-4" />
-
         @if (session('status'))
             <div class="mb-4 font-medium text-sm text-green-600">
                 {{ session('status') }}
@@ -42,7 +42,11 @@
                 <x-jet-button class="ml-4">
                     {{ __('Login') }}
                 </x-jet-button>
+
             </div>
         </form>
+        <x-jet-button class="ml-4 float-right mt-4">
+            <a href="register">Register Now</a>
+        </x-jet-button>
     </x-jet-authentication-card>
 </x-guest-layout>
