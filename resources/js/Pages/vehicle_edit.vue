@@ -111,23 +111,23 @@ export default {
             return document.querySelector('meta[name="csrf-token"]').getAttribute('content');
         },
     },
-    methods: {
-        getMakes: function () {
-            axios.get("api/getMake").then(function (response) {
-                    this.makes = response.data;
-                }.bind(this)
-            );
-        },
-        getModels: function () {
-            axios.get("api/getModels", {
-                params: {make: this.form.make}
-            })
-                .then(function (response) {
-                        this.employees = response.data;
-                    }.bind(this)
-                );
-        }
-    }
+    // methods: {
+    //     getMakes: function () {
+    //         axios.get("api/getMake").then(function (response) {
+    //                 this.makes = response.data;
+    //             }.bind(this)
+    //         );
+    //     },
+    //     getModels: function () {
+    //         axios.get("api/getModels", {
+    //             params: {make: this.form.make}
+    //         })
+    //             .then(function (response) {
+    //                     this.employees = response.data;
+    //                 }.bind(this)
+    //             );
+    //     }
+    // }
 }
 </script>
 

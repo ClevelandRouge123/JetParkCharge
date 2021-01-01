@@ -17,42 +17,42 @@ Route::get('/', function () {
     return view('auth.login');
 })->name('welcome');
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return Inertia\Inertia::render('Dashboard');
-})->name('dashboard');
+Route::middleware(['auth:sanctum', 'verified'])->group(function () {
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/charging', function () {
-    return Inertia\Inertia::render('Charging');
-})->name('charging');
+    //  Dashboard
+    Route::get('/dashboard', function () {
+        return Inertia\Inertia::render('Dashboard');
+    })->name('dashboard');
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/billing', function () {
-    return Inertia\Inertia::render('Billing');
-})->name('billing');
+    //  Charging
+    Route::get('/charging', function () {
+        return Inertia\Inertia::render('Charging');
+    })->name('charging');
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/info', function () {
-    return Inertia\Inertia::render('Info');
-})->name('info');
+    //  Billing
+    Route::get('/billing', function () {
+        return Inertia\Inertia::render('Billing');
+    })->name('billing');
 
-Route::middleware(['auth:sanctum', 'verified'])->get(
-    '/vehicles', [VehicleController::class, 'index'
-])->name('vehicles');
+    //  Info
+    Route::get('/info', function () {
+        return Inertia\Inertia::render('Info');
+    })->name('info');
 
-Route::middleware(['auth:sanctum', 'verified'])->get(
-    '/vehicle_add', [VehicleController::class, 'create'
-])->name('vehicle_create');
+    //  Vehicles
+    Route::get('/vehicles', [VehicleController::class, 'index'])->name('vehicles');
 
-Route::middleware(['auth:sanctum', 'verified'])->post(
-    '/vehicle_add', [VehicleController::class, 'store'
-])->name('vehicle_store');
+    //  Create
+    Route::get('/vehicle_add', [VehicleController::class, 'create'])->name('vehicle_create');
 
-Route::middleware(['auth:sanctum', 'verified'])->get(
-    '/vehicle_delete/{vehicle}', [VehicleController::class, 'destroy'
-])->name('vehicle_delete');
+    //  Store
+    Route::post('/vehicle_add', [VehicleController::class, 'store'])->name('vehicle_store');
 
-Route::middleware(['auth:sanctum', 'verified'])->get(
-    '/vehicle_edit/{vehicle}', [VehicleController::class, 'edit'
-])->name('vehicle_edit');
+    //  Delete
+    Route::get('/vehicle_delete/{vehicle}', [VehicleController::class, 'destroy'])->name('vehicle_delete');
 
-Route::middleware(['auth:sanctum', 'verified'])->post(
-    '/vehicle_update/{vehicle}', [VehicleController::class, 'update'
-])->name('vehicle_update');
+    //  Edit
+    Route::get('/vehicle_edit/{vehicle}', [VehicleController::class, 'edit'])->name('vehicle_edit');
+    Route::post('/vehicle_update/{vehicle}', [VehicleController::class, 'update'])->name('vehicle_update');
+
+});
