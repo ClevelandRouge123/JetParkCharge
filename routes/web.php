@@ -48,3 +48,11 @@ Route::middleware(['auth:sanctum', 'verified'])->post(
 Route::middleware(['auth:sanctum', 'verified'])->get(
     '/vehicle_delete/{vehicle}', [VehicleController::class, 'destroy'
 ])->name('vehicle_delete');
+
+Route::middleware(['auth:sanctum', 'verified'])->get(
+    '/vehicle_edit/{vehicle}', [VehicleController::class, 'edit'
+])->name('vehicle_edit');
+
+Route::middleware(['auth:sanctum', 'verified'])->post(
+    '/vehicle_update/{vehicle}', [VehicleController::class, 'update'
+])->name('vehicle_update');

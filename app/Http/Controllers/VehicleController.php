@@ -60,7 +60,6 @@ class VehicleController extends Controller
         } else {
             return back()->withInput();
         }
-        return $result;
     }
 
     /**
@@ -82,7 +81,7 @@ class VehicleController extends Controller
      */
     public function edit(Vehicle $vehicle)
     {
-        //
+        return Inertia::render('vehicle_edit', ['vehicle' => $vehicle]);
     }
 
     /**
@@ -94,7 +93,16 @@ class VehicleController extends Controller
      */
     public function update(Request $request, Vehicle $vehicle)
     {
-        //
+        $vehicle->name = $request->get('name');
+        $vehicle->reg = $request->get('reg');
+        $vehicle->make = $request->get('make');
+        $vehicle->model = $request->get('model');
+        $vehicle->mileage = $request->get('mileage');
+        if ($vehicle->save()) {
+            return redirect('/vehicles');
+        } else {
+            return back()->withInput();
+        }
     }
 
     /**

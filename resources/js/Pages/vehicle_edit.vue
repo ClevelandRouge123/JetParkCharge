@@ -9,7 +9,7 @@
         <div class="py-6">
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                 <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 flex flex-col my-2">
-                    <form class="mb-4" action="/vehicle_add" method="post">
+                    <form class="mb-4" v-bind:action="/vehicle_update/+vehicle.id" method="post">
                         <input type="hidden" name="_token" :value="csrf">
                         <div class="-mx-3 md:flex mb-6">
 
@@ -20,7 +20,7 @@
                                 </label>
                                 <input
                                     class="appearance-none block w-full bg-grey-lighter text-grey-darker border border-red rounded py-3 px-4 mb-3"
-                                    id="name" name="name" type="text" placeholder="Any Name here...">
+                                    id="name" name="name" type="text" v-bind:value="vehicle.name">
                                 <p class="text-red text-xs italic">Please fill out this field.</p>
                             </div>
                             <div class="md:w-1/2 px-3">
@@ -30,7 +30,7 @@
                                 </label>
                                 <input
                                     class="appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded py-3 px-4 mb-3"
-                                    id="reg" type="text" name="reg" placeholder="FV12 RWU">
+                                    id="reg" type="text" name="reg" v-bind:value="vehicle.reg">
                                 <p class="text-red text-xs italic">Please fill out this field.</p>
 
                             </div>
@@ -42,9 +42,9 @@
                                     Make
                                 </label>
                                 <div class="relative">
-                                    <select
-                                        class="block w-full bg-grey-lighter border border-grey-lighter text-grey-darker py-3 px-4 pr-8 rounded"
-                                        id="make" name="make">
+                                    <select v-bind:value="vehicle.make"
+                                            class="block w-full bg-grey-lighter border border-grey-lighter text-grey-darker py-3 px-4 pr-8 rounded"
+                                            id="make" name="make">
                                         <option></option>
                                         <option>Tesla</option>
                                     </select>
@@ -56,9 +56,9 @@
                                     Model
                                 </label>
                                 <div class="relative">
-                                    <select
-                                        class="block w-full bg-grey-lighter border border-grey-lighter text-grey-darker py-3 px-4 pr-8 rounded"
-                                        id="model" name="model">
+                                    <select v-bind:value="vehicle.model"
+                                            class="block w-full bg-grey-lighter border border-grey-lighter text-grey-darker py-3 px-4 pr-8 rounded"
+                                            id="model" name="model">
                                         <option></option>
                                         <option>Model 3</option>
                                         <option>Model S</option>
@@ -75,11 +75,11 @@
                                 </label>
                                 <input
                                     class="appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded py-3 px-4"
-                                    id="mileage" name="mileage" type="text" placeholder="12123">
+                                    id="mileage" name="mileage" type="text" v-bind:value="vehicle.mileage">
                             </div>
                         </div>
                         <button class="block bg-gray-800 text-white uppercase text-md mx-auto p-4 rounded"
-                                type="submit">Add Vehicle
+                                type="submit">Update Vehicle
                         </button>
                     </form>
 
@@ -100,7 +100,8 @@ import Button from "../Jetstream/Button";
 import Input from "../Jetstream/Input";
 
 export default {
-    name: "vehicle_add",
+    name: "vehicle_edit",
+    props: ['vehicle'],
     components: {
         Input,
         AppLayout,
