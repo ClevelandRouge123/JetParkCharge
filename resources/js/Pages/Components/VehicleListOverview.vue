@@ -3,18 +3,19 @@
         <div class="max-w-6xl mx-auto">
             <div class="flex items-center justify-center">
                 <div class="max-w-sm w-full sm:w-full lg:w-full py-6 px-3">
-                    <div class="bg-white shadow-xl rounded-lg overflow-hidden">
+                    <div class="bg-white shadow-xl rounded-lg overflow-hidden hover:shadow-outline-gray">
                         <a v-bind:href="'/vehicle_view/'+vehicle.id">
-                            <div class="bg-cover bg-center h-56 p-4"
-                                 style="background-image: url(https://via.placeholder.com/450x450)">
-                                <div class="flex justify-end">
-                                    <!--                                <svg class="h-6 w-6 text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
-                                    <!--                                    <path d="M12.76 3.76a6 6 0 0 1 8.48 8.48l-8.53 8.54a1 1 0 0 1-1.42 0l-8.53-8.54a6 6 0 0 1 8.48-8.48l.76.75.76-.75zm7.07 7.07a4 4 0 1 0-5.66-5.66l-1.46 1.47a1 1 0 0 1-1.42 0L9.83 5.17a4 4 0 1 0-5.66 5.66L12 18.66l7.83-7.83z"></path>-->
-                                    <!--                                </svg>-->
-                                </div>
-                            </div>
+                            <!--                            @todo add image upload for vehicle, still not certain if you'd want to add here-->
+                            <!--                            <div class="bg-cover bg-center h-56 p-4"-->
+                            <!--                                 style="background-image: url(https://via.placeholder.com/450x450)">-->
+                            <!--                                <div class="flex justify-end">-->
+                            <!--                                    &lt;!&ndash;                                <svg class="h-6 w-6 text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">&ndash;&gt;-->
+                            <!--                                    &lt;!&ndash;                                    <path d="M12.76 3.76a6 6 0 0 1 8.48 8.48l-8.53 8.54a1 1 0 0 1-1.42 0l-8.53-8.54a6 6 0 0 1 8.48-8.48l.76.75.76-.75zm7.07 7.07a4 4 0 1 0-5.66-5.66l-1.46 1.47a1 1 0 0 1-1.42 0L9.83 5.17a4 4 0 1 0-5.66 5.66L12 18.66l7.83-7.83z"></path>&ndash;&gt;-->
+                            <!--                                    &lt;!&ndash;                                </svg>&ndash;&gt;-->
+                            <!--                                </div>-->
+                            <!--                            </div>-->
 
-                            <div class="p-4">
+                            <div class="rounded-t shadow p-4 ">
                                 <p class="uppercase tracking-wide text-sm font-bold text-gray-700">{{ vehicle.name }} •
                                     {{ vehicle.reg }}</p>
                                 <p class="text-3xl text-gray-900 ">
@@ -49,13 +50,16 @@
                         </div>
                         <div class="flex p-4 border-t border-gray-300 text-gray-700">
                             <div class="flex-1 inline-flex">
-                                <a v-bind:href="'/vehicle_edit/'+ vehicle.id"
+                                <a v-bind:href="'/vehicle/'+ vehicle.id + '/edit'"
                                    class="align-middle content-center block uppercase shadow bg-gray-800 hover:bg-gray-700 focus:shadow-outline focus:outline-none text-white text-xs py-3 px-10 rounded">Edit</a>
                             </div>
                             <div class="flex-1 inline-flex">
-                                <a v-bind:href="'/vehicle_delete/'+ vehicle.id"
-                                   class="align-middle block uppercase shadow bg-red-800 hover:bg-red-600 focus:shadow-outline focus:outline-none text-white text-xs py-3 px-10 rounded">Delete</a>
-
+                                <form method="POST" v-bind:action="'vehicle/'+ vehicle.id">
+                                    <input type="hidden" name="_token" :value="csrf">
+                                    <input type="hidden" name="_method" value="DELETE">
+                                    <input type="submit" value="Delete" v-bind:href="'/vehicle/'+ vehicle.id"
+                                           class="align-middle block uppercase shadow bg-red-800 hover:bg-red-600 focus:shadow-outline focus:outline-none text-white text-xs py-3 px-10 rounded">
+                                </form>
                             </div>
                         </div>
                         <div class="px-4 pt-3 pb-4 border-t border-gray-300 bg-gray-100">
@@ -80,8 +84,12 @@
 <script>
 export default {
     name: "Vehicle.vue",
-    props: ['vehicle']
-
+    props: ['vehicle'],
+    computed: {
+        csrf() {
+            return document.querySelector('meta[name="csrf-token"]').getAttribute('content');
+        },
+    }
 }
 </script>
 

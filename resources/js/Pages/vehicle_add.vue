@@ -9,7 +9,7 @@
         <div class="py-6">
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                 <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 flex flex-col my-2">
-                    <form class="mb-4" action="/vehicle_add" method="post">
+                    <form class="mb-4" action="/vehicle" method="post">
                         <input type="hidden" name="_token" :value="csrf">
                         <div class="-mx-3 md:flex mb-6">
 
@@ -78,7 +78,7 @@
                                     id="mileage" name="mileage" type="text" placeholder="12123">
                             </div>
                         </div>
-                        <button class="block bg-gray-800 text-white uppercase text-md mx-auto p-4 rounded"
+                        <button class="block mt-10 bg-gray-800 text-white uppercase text-md mx-auto p-4 rounded"
                                 type="submit">Add Vehicle
                         </button>
                     </form>

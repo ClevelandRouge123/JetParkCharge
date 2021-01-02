@@ -42,17 +42,7 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
     //  Vehicles
     Route::get('/vehicles', [VehicleController::class, 'index'])->name('vehicles');
 
-    //  Create
-    Route::get('/vehicle_add', [VehicleController::class, 'create'])->name('vehicle_create');
-
-    //  Store
-    Route::post('/vehicle_add', [VehicleController::class, 'store'])->name('vehicle_store');
-
-    //  Delete
-    Route::get('/vehicle_delete/{vehicle}', [VehicleController::class, 'destroy'])->name('vehicle_delete');
-
-    //  Edit
-    Route::get('/vehicle_edit/{vehicle}', [VehicleController::class, 'edit'])->name('vehicle_edit');
-    Route::post('/vehicle_update/{vehicle}', [VehicleController::class, 'update'])->name('vehicle_update');
+    // Vehicle Model Resource
+    Route::resource('vehicle', VehicleController::class);
 
 });

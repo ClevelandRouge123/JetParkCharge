@@ -29,11 +29,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="092cdeb5-c237-49b7-9895-3431e8713f16" name="Default Changelist" comment="Update management to vehicles">
-      <change afterPath="$PROJECT_DIR$/resources/js/Pages/vehicle_edit.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/VehicleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/VehicleController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/Pages/Components/VehicleListOverview.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/Components/VehicleListOverview.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/Pages/Vehicles.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/Vehicles.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/Pages/vehicle_add.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/vehicle_add.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/Pages/vehicle_edit.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/vehicle_edit.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -239,6 +242,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="settings.php.debug.servers" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -305,7 +309,7 @@
       <workItem from="1607729289969" duration="13288000" />
       <workItem from="1608028699949" duration="8223000" />
       <workItem from="1608754657043" duration="11885000" />
-      <workItem from="1609427370236" duration="3873000" />
+      <workItem from="1609427370236" duration="14171000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <created>1602016468676</created>
@@ -384,7 +388,28 @@
       <option name="project" value="LOCAL" />
       <updated>1609428600014</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Added edit view">
+      <created>1609509465858</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1609509465858</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Updated Routes to all be included within middleware rather than seperately">
+      <created>1609524805218</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1609524805218</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Add Vehicle Factory">
+      <created>1609543136697</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1609543136697</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -426,7 +451,10 @@
     <MESSAGE value="Select Vehicles rather than user on management page" />
     <MESSAGE value="Update management to vehicles" />
     <MESSAGE value="UPdated commit added delete method" />
-    <option name="LAST_COMMIT_MESSAGE" value="UPdated commit added delete method" />
+    <MESSAGE value="Added edit view" />
+    <MESSAGE value="Updated Routes to all be included within middleware rather than seperately" />
+    <MESSAGE value="Add Vehicle Factory" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Vehicle Factory" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">

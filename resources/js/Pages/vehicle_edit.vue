@@ -9,8 +9,9 @@
         <div class="py-6">
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                 <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 flex flex-col my-2">
-                    <form class="mb-4" v-bind:action="/vehicle_update/+vehicle.id" method="post">
+                    <form class="mb-4" v-bind:action="/vehicle/+vehicle.id" method="post">
                         <input type="hidden" name="_token" :value="csrf">
+                        <input type="hidden" name="_method" value="PUT">
                         <div class="-mx-3 md:flex mb-6">
 
                             <div class="md:w-1/2 px-3 mb-6 md:mb-0">
@@ -78,19 +79,13 @@
                                     id="mileage" name="mileage" type="text" v-bind:value="vehicle.mileage">
                             </div>
                         </div>
-                        <button class="block bg-gray-800 text-white uppercase text-md mx-auto p-4 rounded"
+                        <button class="block mt-10 bg-gray-800 text-white uppercase text-md mx-auto p-4 rounded"
                                 type="submit">Update Vehicle
                         </button>
                     </form>
-
                 </div>
-
-
             </div>
-
-
         </div>
-
     </app-layout>
 </template>
 
