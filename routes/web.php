@@ -17,6 +17,7 @@ Route::get('/', function () {
     return view('auth.login');
 })->name('welcome');
 
+
 Route::middleware(['auth:sanctum', 'verified'])->group(function () {
 
     //  Dashboard
