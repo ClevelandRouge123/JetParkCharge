@@ -17,7 +17,7 @@ Route::get('/', function () {
     return view('auth.login');
 })->name('welcome');
 
-
+// Ensure authenticated user
 Route::middleware(['auth:sanctum', 'verified'])->group(function () {
 
     //  Dashboard
