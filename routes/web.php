@@ -4,7 +4,6 @@ use App\Mail\WelcomeMail;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\VehicleController;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
