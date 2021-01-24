@@ -1,7 +1,10 @@
 <?php
 
+use App\Mail\WelcomeMail;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\VehicleController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -45,5 +48,10 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
 
     // Vehicle Model Resource
     Route::resource('vehicle', VehicleController::class);
+
+});
+Route::get('mailable', function () {
+    $invoice = App\Models\User::find(1);
+    Mail::to('clevelandmarcus@hotmail.co.uk')->send(new WelcomeMail($invoice));
 
 });

@@ -19,6 +19,7 @@ class VehicleController extends Controller
     public function index()
     {
         $data = Vehicle::where('user_id', Auth::id())->orderBy('created_at', 'desc')->get();
+
         return Inertia::render('Vehicles', ['vehicles' => $data]);
     }
 
