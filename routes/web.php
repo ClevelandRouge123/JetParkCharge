@@ -1,6 +1,8 @@
 <?php
 
+use App\Jobs\SendEmail;
 use App\Mail\WelcomeMail;
+use Carbon\Carbon;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\VehicleController;
@@ -50,7 +52,11 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
 
 });
 Route::get('mailable', function () {
-    $invoice = App\Models\User::find(1);
-    Mail::to('clevelandmarcus@hotmail.co.uk')->send(new WelcomeMail($invoice));
+    $user = \App\Models\User::find(1);
+//    Mail::to($user->email)->later(now()->addSecond(10), new WelcomeMail($user));
+
+//    $details['email'] = 'clevelandmarcus@hotmail.co.uk';
+//    $emailJob = (new SendEmail($details))->delay(Carbon::now()->addMinutes(5));
+//    dispatch($emailJob);
 
 });

@@ -2,6 +2,7 @@
 
 namespace App\Actions\Fortify;
 
+use App\Jobs\SendEmail;
 use App\Mail\WelcomeMail;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
@@ -31,7 +32,10 @@ class CreateNewUser implements CreatesNewUsers
             'email' => $input['email'],
             'password' => bcrypt($input['password']),
         ]);
-        Mail::to($input['email'])->send(new WelcomeMail($user));
+        $emailJob = (new SendEmail($input))->delay(Carbon::now()->addMinutes(5));
+        dispatch($emailJob);
+        //        Old version prior to queue
+        //        Mail::to($input['email'])->queue(new WelcomeMail($user));
 
         return $user;
     }
